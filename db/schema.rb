@@ -10,16 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_15_165208) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_15_195850) do
   create_table "battles", force: :cascade do |t|
-    t.integer "monsterA_id", null: false
-    t.integer "monsterB_id", null: false
-    t.integer "winner_id", null: false
+    t.integer "monsterA_id"
+    t.integer "monsterB_id"
+    t.integer "winner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["monsterA_id"], name: "index_battles_on_monsterA_id"
-    t.index ["monsterB_id"], name: "index_battles_on_monsterB_id"
-    t.index ["winner_id"], name: "index_battles_on_winner_id"
   end
 
   create_table "monsters", force: :cascade do |t|
@@ -33,7 +30,4 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_15_165208) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "battles", "monsterAs"
-  add_foreign_key "battles", "monsterBs"
-  add_foreign_key "battles", "winners"
 end
