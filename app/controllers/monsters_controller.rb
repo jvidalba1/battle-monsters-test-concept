@@ -48,7 +48,7 @@ class MonstersController < ApplicationController
   def import
     file = params[:file]
 
-    if file
+    if file && file.is_a?(ActionDispatch::Http::UploadedFile)
       import_service = CsvImportService.new(file).call
 
       if import_service.success?
