@@ -1,4 +1,4 @@
-require 'rails_helper' 
+require 'rails_helper'
 
 RSpec.describe BattlesController, type: :controller do
     before(:each) do
@@ -8,12 +8,12 @@ RSpec.describe BattlesController, type: :controller do
           defense: 20,
           hp: 50,
           speed: 80,
-          imageUrl: 'https://example.com/image.jpg'
+          image_url: 'https://example.com/image.jpg'
         )
 
         # Please include additional monsters here for testing purposes.
     end
-    
+
     def create_battles
         FactoryBot.create_list(:battle, 2)
     end
@@ -22,7 +22,7 @@ RSpec.describe BattlesController, type: :controller do
         create_battles
         get :index
         response_data = JSON.parse(response.body)['data']
-    
+
         expect(response).to have_http_status(:ok)
         expect(response_data.count).to eq(2)
     end

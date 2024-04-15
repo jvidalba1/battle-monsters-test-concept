@@ -5,6 +5,6 @@ FactoryBot.define do
       defense { 40 }
       hp { 70 }
       speed { 10 }
-      imageUrl { 'https://example.com/image.jpg' }
+      image_url { 'https://example.com/image.jpg' }
     end
 end

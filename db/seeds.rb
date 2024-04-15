@@ -17,7 +17,7 @@ Monster.create!([{
     defense: 40,
     hp: 10,
     speed: 80,
-    imageUrl: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/dead-unicorn.png"
+    image_url: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/dead-unicorn.png"
 },
 {
     name: "Old Shark",
@@ -25,7 +25,7 @@ Monster.create!([{
     defense: 20,
     hp: 80,
     speed: 90,
-    imageUrl: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/old-shark.png"
+    image_url: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/old-shark.png"
 },
 {
     name: "Red Dragon",
@@ -33,7 +33,7 @@ Monster.create!([{
     defense: 80,
     hp: 90,
     speed: 70,
-    imageUrl: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/red-dragon.png"
+    image_url: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/red-dragon.png"
 },
 {
     name: "Robot Bear",
@@ -41,7 +41,7 @@ Monster.create!([{
     defense: 40,
     hp: 80,
     speed: 60,
-    imageUrl: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/robot-bear.png"
+    image_url: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/robot-bear.png"
 },
 {
     name: "Angry Snake",
@@ -49,7 +49,7 @@ Monster.create!([{
     defense: 20,
     hp: 70,
     speed: 80,
-    imageUrl: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/angry-snake.png"
+    image_url: "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/angry-snake.png"
 }])
 
 p "Created #{Monster.count} monsters"
